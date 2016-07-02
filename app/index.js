@@ -1,9 +1,9 @@
-import { render } from 'react-dom'
-import Light from './components/Light'
+import { render } from 'react-dom';
+import Light from './components/Light';
 
 render(
-  <Light />,
-  document.getElementById('game')
-)
+    <Light />,
+    document.getElementById('game')
+);
 
-console.log('hi')
+console.log('hi');
