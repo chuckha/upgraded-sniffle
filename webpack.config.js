@@ -1,17 +1,24 @@
-module.exports = {
-  entry: './app/index.js',
+'use strict';
+
+var path = require('path');
+
+var config = {
+  entry: path.join(__dirname, 'app', 'index.js'),
   output: {
-    path: './bundle',
-    filename: 'bundle.js'
+    path: path.join(__dirname, 'bundle'),
+    filename: 'bundle.js',
+    publicPath: '/static/'
   },
   module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['es2015', 'react']
-      }
-    }]
+    loaders: [
+    { 
+      test: /\.js$/, 
+      exclude: /node_modules/, 
+      loaders: ['babel-loader'],
+      include: __dirname
+    }
+    ]
   }
-}
+};
+
+module.exports = config;

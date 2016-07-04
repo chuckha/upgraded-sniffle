@@ -1,9 +1,9 @@
-import { render } from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Light from './components/Light';
 
-render(
-    <Light />,
-    document.getElementById('game')
+console.log("hi");
+ReactDOM.render(
+  <Light />,
+  document.getElementById('game')
 );
-
-console.log('hi');
