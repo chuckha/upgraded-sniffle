@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Light from './components/Light';
+import Mole from './components/Mole';
 
-console.log("hi");
 ReactDOM.render(
-  <Light />,
+  <Mole />,
   document.getElementById('game')
 );

@@ -11,9 +11,9 @@ var config = {
   },
   module: {
     loaders: [
-    { 
-      test: /\.js$/, 
-      exclude: /node_modules/, 
+    {
+      test: /\.js$/,
+      exclude: /node_modules/,
       loaders: ['babel-loader'],
       include: __dirname
     }
